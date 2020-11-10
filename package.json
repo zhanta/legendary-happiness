@@ -4,14 +4,21 @@
   "description": "Nothing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
-  "author": "Yessen Zhantore zhantoreyesen@gmail.com",
+  "author": "Yessen Zhantore",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cjs": "0.0.11",
+    "cjs-loader": "^0.1.0",
+    "core-util-is": "^1.0.2",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "mongoose": "^5.10.11"
+    "express-fileupload": "^1.2.0",
+    "mongoose": "^5.10.11",
+    "nodejs": "0.0.0",
+    "nodemon": "^2.0.6",
+    "webpack-dev-server": "^3.11.0"
   }
 }
