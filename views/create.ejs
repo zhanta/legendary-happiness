@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layouts/head'); -%>
+<body>
+    <%- include('layouts/header'); -%>
+   <%- include('layouts/navbar'); -%>    
+   <div class="main">
+       <form action="/posts/store" method="POST" enctype="multipart/form-data">
+       <div class="container" style="max-height: 400px;">
+       <label>Title :</label>       
+       <input type="text" placeholder="Title" id="title" name="title" style="max-width: 500px">
+       <label>Text :</label>
+       <input type="text" id="body" name="body" style="max-width: 500px; min-height: 100px">
+       <label>Image :</label>
+       <input type="file" id="image" name="image">
+       <button type="submit" style="width: min-content;" id="sendMessageButton">Update</button>
+       </div>
+       </form>
+   </div>
+   <%- include('layouts/footer'); -%>
+    <%- include('layouts/scripts'); -%>
+</body>
+</html>
