@@ -50,6 +50,11 @@ app.get('/auth', (req,res)=> {
 app.get('/reg', (req,res)=> {
     res.render('reg');
 });
+
+app.get('/profile', (req,res)=> {
+    res.render('profile');
+});
+
 app.get('/posts/new', (req,res)=> {
     res.render('create');
 })
