@@ -4,7 +4,7 @@
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 /*---------------------NAVBAR---------------------------*/
@@ -92,7 +92,7 @@ button {
        background-color: #1d937d;   
        width: 100%;   
         padding: 15px;   
-        margin: 10px 0px;   
+        margin: 10px 20px;   
         border: none;   
         cursor: pointer;   
          }   
@@ -119,10 +119,87 @@ button {
         
      
  .container {   
-   margin: 0px auto;
+   margin: 20px auto;
    max-width: 500px;
    max-height: 500px;
         padding: 30px;   
         /*(background-color: #333333;  
         color: white;*/
     }   
+
+
+/*------------PROFILE-------------*/
+
+#ProfilePage
+{
+    /* Move it off the top of the page, then centre it horizontally */
+    margin: 40px auto;
+    width: 635px;
+
+/* For visibility. Delete me */
+border: 1px solid red;
+}
+
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+
+    width: 200px;
+    text-align: center;
+
+    /* Move it away from the content */
+    margin-right: 20px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Photo
+{
+    /* Width and height of photo container */
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Info
+{
+    width: 400px;
+    text-align: center;
+
+    /* Move it to the right */
+    float: right;
+
+/* For visibility. Delete me */
+border: 1px solid blue;
+}
+
+#Info strong
+{
+    /* Give it a width */
+    display: inline-block;
+    width: 100px;
+
+/* For visibility. Delete me */
+border: 1px solid orange;
+}
+
+#Info span
+{
+    /* Give it a width */
+    display: inline-block;
+    width: 250px;
+
+/* For visibility. Delete me */
+border: 1px solid purple;
+}

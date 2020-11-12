@@ -3,10 +3,44 @@
     <%- include('layouts/head'); -%>
 <body>
     <%- include('layouts/navbar'); -%>
-   <%- include('layouts/header'); %>
-   <div class="main">
-       <h1>Profile</h1>
-   </div>
+   
+   
+   <div id="ProfilePage">
+    <div id="LeftCol">
+        <div id="Photo">img</div>
+        <div id="ProfileOptions">
+            username
+        </div>
+    </div>
+
+    <div id="Info">
+        <p>
+            <strong>Name:</strong>
+            <span>Sirjon</span>
+        </p>
+        <p>
+            <strong>Surname:</strong>
+            <span>Sirjon</span>
+        </p>
+        <p>
+            <strong>Address:</strong>
+            <span>Sirjon</span>
+        </p>
+        <p>
+            <strong>Email:</strong>
+            <span>Sirjon</span>
+        </p>
+        <p>
+            <strong>Phone:</strong>
+            <span>Sirjon</span>
+        </p>
+    </div>
+
+    <!-- Needed because other elements inside ProfilePage have floats -->
+    <div style="clear:both"></div>
+    
+</div>
+
    <%- include('layouts/footer'); -%>
    <%- include('layouts/scripts'); -%>
 </body>
