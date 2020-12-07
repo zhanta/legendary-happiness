@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layouts/head'); -%>
+<body>
+   <%- include('layouts/navbar'); -%>
+
+    <div class="row">  
+    <div class="container">
+        <% if(errors != null & errors.length > 0) { %>
+            <ul>
+              <% for (var i = 0; i < errors.length; i++) { %>
+                <li><%= errors[i] %></li>
+                <% } %>
+            </ul>
+            <% } %>
+        <form action="/users/login" method="POST" enctype="multipart/form-data">
+            <label>Username : </label>   
+            <input type="text" placeholder="User Name" id="username" name="username" required> 
+            <label>Password : </label>   
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            <button type="submit">Login</button>    
+        </form>
+    </div>   
+    </div>
+    
+
+    <%- include('layouts/scripts'); -%>
+</body>
+</html>

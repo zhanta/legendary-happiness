@@ -2,11 +2,12 @@
 <html lang="en">
     <%- include('layouts/head'); -%>
 <body>
-   <%- include('layouts/navbar'); -%>
-   <%- include('layouts/header'); %>
+   <%- include('layouts/header'); -%>
+    <%- include('layouts/navbar'); -%>
+   
    <div class="row">
        <div class="main">
-        <div class="fakeimg" style="background-image: url('<%= blogpost.image %>')"></div>
+        <div class="post_image" style="background-image: url('<%= blogpost.image %>')"></div>
         <h1><%= blogpost.title %></h1>
             <h2><%= blogpost.body %></h2>
             <span>Posted by <a href="#"><%= blogpost.username %></a></span>

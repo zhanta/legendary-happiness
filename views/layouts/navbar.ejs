@@ -1,10 +1,16 @@
 
 <div class="navbar">
     <a href="/" class="active">Home</a>
-    <a href="post">My Posts</a>
-    <a href="posts/new">New Post</a>
-    <a href="profile">Profile
-    </a>
-    <a href="reg" class="right">Register</a>
-    <a href="auth" class="right">Login</a>
+    
+    <% if(loggedIn) { %>
+        <a href="/profile">Profile</a>
+        <a href="/posts/new">New Post</a>
+        <a class="right" href="/auth/logout">Log out</a>         
+      <% } %>
+      <% if(!loggedIn) { %>    
+        <a href="/auth/register" class="right">Register</a>
+        <a href="/auth/login" class="right">Login</a>
+      <% } %>   
+
+      
   </div>

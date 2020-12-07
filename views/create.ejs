@@ -5,17 +5,17 @@
     <%- include('layouts/header'); -%>
    <%- include('layouts/navbar'); -%>    
    <div class="main">
-       <form action="/posts/store" method="POST" enctype="multipart/form-data">
-       <div class="container" style="max-height: 400px;">
+    <form action="/posts/store" method="POST" enctype="multipart/form-data">
+        <div class="container" style="max-height: 400px;">
        <label>Title :</label>       
        <input type="text" placeholder="Title" id="title" name="title" style="max-width: 500px">
        <label>Text :</label>
-       <input type="text" id="body" name="body" style="max-width: 500px; min-height: 100px">
+       <textarea rows="3" style="min-width: 440px; min-height: 100px" id="body" name="body"></textarea> 
        <label>Image :</label>
        <input type="file" id="image" name="image">
        <button type="submit" style="width: min-content;" id="sendMessageButton">Update</button>
-       </div>
-       </form>
+    </div>
+</form>
    </div>
    <%- include('layouts/footer'); -%>
     <%- include('layouts/scripts'); -%>
