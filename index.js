@@ -21,6 +21,8 @@ const authMiddleware = require('./middleware/authMiddleware');
 const redirectIfAuthenticatedMiddleware = require('./middleware/redirectIfAuthenticatedMiddleware')
 const flash = require('connect-flash');
 
+const profileController = require('./controllers/getProfile')
+
 app.use(fileUpload()) 
 
 mongoose.connect('mongodb://localhost:27017/mydatabase', {useNewUrlParser: true});
@@ -60,9 +62,7 @@ app.get('/auth/login', redirectIfAuthenticatedMiddleware, loginController)
 app.post('/users/login',redirectIfAuthenticatedMiddleware, loginUserController) 
 app.get('/auth/logout', logoutController)
 app.use((req, res) => res.render('notfound'));
-app.get('/profile', (req,res) => {
-    res.render('profile')
-})
+app.get('/profile', profileController)
 
 
 // const express =  require('express');

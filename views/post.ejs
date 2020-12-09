@@ -10,9 +10,9 @@
         <div class="post_image" style="background-image: url('<%= blogpost.image %>')"></div>
         <h1><%= blogpost.title %></h1>
             <h2><%= blogpost.body %></h2>
-            <span>Posted by <a href="#"><%= blogpost.username %></a></span>
+            <span>Posted by <a href="#"><%= blogpost.userid.username %></a></span>
         <article>
-            <%= blogpost.body %>
+            <%= blogpost.datePosted %>
         </article>
        </div>
    </div>
