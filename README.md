@@ -1,3 +1,12 @@
 # legendary-happiness
-# Legend
-Simple Website
+## Used technologies
+- Nodejs
+- Express
+- bcrypt
+- mongoose
+- cjs
+
+## Database
+- MongoDB
+
+Simple Website with login and register
